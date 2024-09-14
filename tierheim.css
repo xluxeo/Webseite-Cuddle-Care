@@ -1,0 +1,165 @@
+
+.tierheimindernaehe {
+    white-space: pre;
+    background: #2c7da0;
+    border-radius: 80px;
+    width: 700px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25em;
+    
+}
+
+.tierheimindernaehe h1, h2 {
+    font-size: 25px;
+    padding-left: 3em;
+}
+
+.tierheimindernaehe h1 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.tierheimindernaehe p {
+    font-size: 20px;
+    
+}
+ 
+img {
+    max-width: 600px;
+    float: left;
+    margin: 2em;
+}
+
+section {
+    min-height: 100vh;
+    width: 85%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq {
+    max-width: 950px;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3 {
+    font-size: 25px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition:  max-height 1.4s ease;
+}
+
+.answer p {
+   padding-top: 1em;
+   line-height: 1.2em; 
+   font-size: 20px;
+   white-space: pre;
+}
+
+.faq.active .answer {
+    max-height: 500px;
+}
+
+.faq.active svg {
+    transform: rotate(180deg);
+}
+
+svg {
+    transition: transform  0.5s ease-in;
+}
+
+@media(max-width: 850px){
+    .toggle_button{
+        display: flex;
+    }
+    nav ul{
+        height: min-content;
+        width: 100%;
+        background-color: var(--background-color);
+
+        display: none;
+        position: absolute;
+        top: var(--navbar-height);
+    }
+    nav li{
+        height: min-content;
+        width: 100%;
+    }
+    nav ul a{
+        padding: 30px 0;
+    }
+    .expandable_li{
+        display: block;
+    }
+    .expandable_li label{
+        padding: 30px 0;
+        cursor: pointer;
+        display: block;
+    }
+    .expandable_li:hover .dropdown{
+        display: none;
+    }
+    .expandable_li input[type="checkbox"]:checked ~ .dropdown{
+        display: block;
+    }
+    .dropdown{
+        position: static;
+        width: 100%;
+    }
+    .dropdown li{
+        padding: 0;
+        display: block;
+        position: static;
+        background: var(--darker-background-color);
+
+    }
+    .dropdown li a{
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+    }
+    #toggle_button:checked ~ ul{
+        display: block;
+    }
+
+    .search  {
+        display: none;
+    }
+   
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .snapwidget-widget {
+        display: none;
+    }
+    .flex_container {
+        display: grid;
+        gap: 40px;
+    }
+    footer, .socialmedia, a {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    .tierheimindernaehe {
+        width: 100%;
+    }
+}

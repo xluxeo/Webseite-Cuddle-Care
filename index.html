@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuddle Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="icon">
+            <img src="img/weiß cuddle care logo.png">
+        </div>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="expandable_li">
+                <a href="streuner.html">Streuner</a>
+                <input type="checkbox" id="streuner_checkbox">
+                <label for="streuner_checkbox"></label>
+                <ul class="dropdown">
+                    <li><a href="streuner.html #animalhoarding_section">Animal Hoarding</a></li>
+                    <li><a href="streuner.html #wegtierheim_section"> Der Weg ins Tierheim</a></li>
+                </ul>
+            </li>
+            <li class="expandable_li">
+                <a href="tierheim.html">Tierheim</a>
+                <input type="checkbox" id="tierheim_checkbox">
+                <label for="tierheim_checkbox"></label>
+                <ul class="dropdown">
+                    <li><a href="tierheim.html #tierheimin_section">Tierheime in der Nähe</a></li>
+                    <li><a href="tierheim.html #organisation_section">Organisation/Ablauf</a></li>
+                    <li><a href="tierheim.html #streuner_section">Streuner - Was jetzt?</a></li>
+                </ul>
+            </li>
+            <li class="expandable_li">
+                <a href="homepage.html #kontakt_section">Kontakt</a>
+                <input type="checkbox" id="kontakt_checkbox">
+                <label for="kontakt_checkbox"></label>
+                <ul class="dropdown">
+                    <li><a href="https://www.instagram.com/CuddleCare_de/">Instagram</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+        <form>
+            <div class="search">
+                <span class="search-icon material-symbols-outlined">
+                    search
+                </span>
+                <input class="search-input" type="search" placeholder="Suche">
+            </div>
+        </form>
+    </nav>
+
+    <div class="slider">
+        <div class="slides">
+            <img class="slide" src="img/slider-1.png" alt="Image #1">
+            <img class="slide" src="img/slider-2.png" alt="Image #2">
+            <img class="slide" src="img/slider-3.png" alt="Image #3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+    </div>
+
+    <!-- SnapWidget -->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="https://snapwidget.com/embed/1070376" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:30%; margin-left: 1em;" title="Posts from Instagram"></iframe>
+ 
+
+    <main>
+        
+        <section id="merch_section">
+            <h2>Merch</h2>
+            <div class="warummerch">
+                <div class="text-1">
+                    <p>
+                        Wir freuen uns, unseren neuen Merch vorzustellen,
+                        der derzeit zu Demonstrationszwecken erstellt wurde. 
+                        Die Idee hinter diesem Projekt ist es, 
+                        stilvolle und kreative Produkte zu designen,
+                        die Sie gerne tragen und nutzen werden.
+                        Doch unser Merch ist mehr als nur Kleidung und Accessoires –
+                        er ist ein Zeichen der Unterstützung für eine gute Sache.
+                     </p>
+                </div>
+                <div class="text-2">
+                    <p>
+                        In naher Zukunft wird dieser Merch käuflich zu erwerben sein.
+                        Der besondere Clou dabei: 
+                        Die Einnahmen aus dem Verkauf werden vollständig an Tierheime gespendet.
+                        Damit möchten wir einen Beitrag leisten, 
+                        um bedürftigen Tieren ein besseres Leben zu ermöglichen. 
+                        Jeder Kauf hilft, Futter, medizinische Versorgung und 
+                        ein liebevolles Zuhause für unsere tierischen Freunde sicherzustellen.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="flex_container">
+                <div class="card">
+                    <h3>Beanie</h3>
+                    <img src="img/beanie.png">
+                    <a href="#">Kaufen</a>
+                </div>
+                <div class="card">
+                    <h3>Cap</h3>
+                    <img src="img/cap.png">
+                    <a href="#">Kaufen</a>
+                </div>
+                <div class="card">
+                    <h3>T-Shirt</h3>
+                    <img src="img/tshirt.png">
+                    <a href="#">Kaufen</a>
+                </div>
+                <div class="card">
+                    <h3>Hoodie</h3>
+                    <img src="img/hoodie.png">
+                    <a href="#">Kaufen</a>
+                </div>
+            </div>
+        </section>       
+        <div class="dassindwir">
+            <img src="img/wir.jpeg">
+            <div class="dassindwir-text">
+                <h2>Das sind wir:</h2>
+                <p>
+                    Moin, im Rahmen unseres Abiturprojekts (auch bekannt als P5) haben wir uns dazu
+                    entschlossen, diese Webseite zu programmieren, zu gestalten und mit Informationen über
+                    das Thema „Tierheim“ zu füllen. Auch unsere beiden Social Media Accounts auf
+                    Instagram und Pinterest, die du unter „CuddleCare.de“ findest, gehören zu unserem
+                    Abiprojekt.
+                    Wir haben versucht, so gewissenhaft wie möglich zu Arbeiten, um dir das bestmögliche
+                    Ergebnis präsentieren zu können. Wir können dennoch nicht gewährleisten, dass alle
+                    Angaben korrekt sind. Falls sich irgendwo ein Fehler eingeschlichen hat, bitten wir diesen
+                    zu entschuldigen.
+                    Viele Grüße,
+                    Deine Mieke, Leonie und Carina.
+                </p>
+
+            </div>
+        
+         
+     
+    </main>
+    <footer>
+    <section id="kontakt_section">
+        <div class="kontakt">
+            <p>Email: info@CuddleCare.de</p>
+        </div>
+    </section>
+        <div class="socialmedia">
+            <i class="fa fa-instagram" style="font-size: 36px; color: white;">
+                <a href="https://www.instagram.com/CuddleCare_de/">CuddleCare_de</a>
+            </i>
+            <i class="fa fa-pinterest" style="font-size:36px; color: white;">
+                <a href="https://www.pinterest.de/CuddleCare_de/">CuddleCare_de</a>
+            </i>
+        </div>
+    
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
